@@ -1,76 +1,202 @@
-# spicetify community themes
+# text
 
-This is a collection of themes for [spicetify](https://github.com/spicetify/spicetify-cli), a command-line tool to customize Spotify.
+## Screenshots
 
-You can add your own theme simply by opening a Pull Request (more info in [CONTRIBUTING.md](./CONTRIBUTING.md)).
+#### Display Images
 
-### **You can find a preview of all the themes in [THEMES.md](./THEMES.md).**
+##### with images
 
-## Notes:
+![withimg](screenshots/withimg.png)
 
-*   **These themes require that you have the latest version of Spotify and Spicetify.**
-*   **To install Dribbblish and Turntable themes, follow the instructions in their READMEs**.
-*   **Spotify ad-blocked version is not supported.**
+##### without images
 
-## Installation and usage
+![withoutimg](screenshots/withoutimg.png)
 
-(If you use Arch Linux you can find this project on the [AUR](https://aur.archlinux.org/packages/spicetify-themes-git/))
+### Spotify
 
-1.  Clone this repository. Make sure [git](https://git-scm.com/) is installed and run:
-    ```bash
-    git clone --depth=1 https://github.com/spicetify/spicetify-themes.git 
-    ```
+![Spotify](screenshots/Spotify.png)
 
-2.  Copy the files into the [Spicetify Themes folder](https://spicetify.app/docs/development/themes). Run:
+### Spicetify
 
-    **Linux**
+![Spicetify](screenshots/Spicetify.png)
 
-    ```bash
-    cd spicetify-themes
-    cp -r * ~/.config/spicetify/Themes
-    ```
+### CatppuccinMocha
 
-    **MacOS**
+![CatppuccinMocha](screenshots/CatppuccinMocha.png)
 
-    ```bash
-    cd spicetify-themes
-    cp -r * ~/.config/spicetify/Themes
-    ```
+### CatppuccinMacchiato
 
-    **Windows**
+![CatppuccinMacchiato](screenshots/CatppuccinMacchiato.png)
 
-    ```powershell
-    cd spicetify-themes
-    cp * "$(spicetify -c | Split-Path)\Themes\" -Recurse
-    ```
+### CatppuccinLatte
 
-3.  Choose which theme to apply just by running:
-    ```bash
-    spicetify config current_theme THEME_NAME
-    ```
-    Some themes have 2 or more different color schemes. After selecting the theme you can switch between them with:
-    ```bash
-    spicetify config color_scheme SCHEME_NAME
-    ```
+![CatppuccinLatte](screenshots/CatppuccinLatte.png)
 
-### Extra
+### Dracula
 
-The `_Extra` folder contains additional resources for tweaking the look of
-Spotify. More info in its [README](./\_Extra/README.md).
+![Dracula](screenshots/Dracula.png)
 
-## Contributions
+### Gruvbox
 
-We've set up a separate document for our [contribution guidelines](./CONTRIBUTING.md).
+![Gruvbox](screenshots/Gruvbox.png)
 
-## Troubleshooting
+### Kanagawa
 
-Do not open issues for general support questions as we want to keep GitHub issues for bug reports and feature requests. If you find problems when using or installing these themes, or you need help in modifying a theme then ask for suggestions on the [subreddit](https://www.reddit.com/r/spicetify/) or on the [Discord Server](https://discord.com/invite/VnevqPp2Rr).
+![Kanagawa](screenshots/Kanagawa.png)
 
-Use GitHub issues ONLY for bugs and requesting new features.
+### Nord
 
-If you are unsure about which channel to use, go for Reddit or Discord.
+![Nord](screenshots/Nord.png)
 
-## Useful resources
+### Rigel
 
-*   [Spicetify theme without free version UI elements (e.g. "Upgrade" button)](https://github.com/Daksh777/SpotifyNoPremium)
-*   [DribbblishDynamic theme for v2](https://github.com/JulienMaille/dribbblish-dynamic-theme)
+![CatppuccinMaRigelcchiato](screenshots/Rigel.png)
+
+### RosePine
+
+![RosePine](screenshots/RosePine.png)
+
+### RosePineMoon
+
+![RosePineMoon](screenshots/RosePineMoon.png)
+
+### RosePineDawn
+
+![RosePineDawn](screenshots/RosePineDawn.png)
+
+### Solarized
+
+![Solarized](screenshots/Solarized.png)
+
+### TokyoNight
+
+![TokyoNight](screenshots/TokyoNight.png)
+
+### TokyoNightStorm
+
+![TokyoNightStorm](screenshots/TokyoNightStorm.png)
+
+### ForestGreen
+
+![ForestGreen](screenshots/ForestGreen.png)
+
+### EverforestDarkMedium
+
+![EverforestDarkMedium](screenshots/EverforestDarkMedium.png)
+
+## More
+
+### Description
+
+a spicetify theme that mimics the look of [spotify-tui](https://github.com/Rigellute/spotify-tui)
+
+### Credits
+
+created by [darkthemer](https://github.com/darkthemer/)
+
+### Notes
+
+-   **SUGGESTION:** Feel free to edit `color.ini` to swap the accent color (it's green for most of them) into your preferred color based from the color pallete.
+
+    -   https://github.com/catppuccin/catppuccin
+    -   https://github.com/dracula/dracula-theme
+    -   https://github.com/morhetz/gruvbox
+    -   https://github.com/rebelot/kanagawa.nvim
+    -   https://github.com/nordtheme/nord
+    -   https://github.com/Rigellute/rigel
+    -   https://github.com/rose-pine/rose-pine-theme
+    -   https://github.com/altercation/solarized
+    -   https://github.com/enkia/tokyo-night-vscode-theme
+    -   https://github.com/sainnhe/everforest
+
+-   **SUGGESTION:** Check the very top of `user.css` for user settings
+
+    -   If you use the Marketplace, go to `Marketplace > Snippets > + Add CSS` and then paste the variables found in `user.css` (also below). Edit these as you wish. If you're following this method, don't forget to add `!important` at the end of each property.
+
+```css
+/* user settings */
+:root {
+    --font-family: "JetBrains Mono", monospace;
+    /*
+    --font-family: 'Anonymous Pro', monospace;
+    --font-family: 'Azeret Mono', monospace;
+    --font-family: 'B612 Mono', monospace;
+    --font-family: 'Courier Prime', monospace;
+    --font-family: 'Cousine', monospace;
+    --font-family: 'Cutive Mono', monospace;
+    --font-family: 'DM Mono', monospace;
+    --font-family: 'Fira Code', monospace;
+    --font-family: 'Fira Mono', monospace;
+    --font-family: 'IBM Plex Mono', monospace;
+    --font-family: 'JetBrains Mono', monospace;
+    --font-family: 'M PLUS 1 Code', monospace;
+    --font-family: 'Major Mono Display', monospace;
+    --font-family: 'Monofett', monospace;
+    --font-family: 'Nova Mono', monospace;
+    --font-family: 'Overpass Mono', monospace;
+    --font-family: 'Oxygen Mono', monospace;
+    --font-family: 'PT Mono', monospace;
+    --font-family: 'Roboto Mono', monospace;
+    --font-family: 'Share Tech Mono', monospace;
+    --font-family: 'Sometype Mono', monospace;
+    --font-family: 'Sono', monospace;
+    --font-family: 'Source Code Pro', monospace;
+    --font-family: 'Space Mono', monospace;
+    --font-family: 'Syne Mono', monospace;
+    --font-family: 'Ubuntu Mono', monospace;
+    --font-family: 'VT323', monospace;
+    --font-family: 'Xanh Mono', monospace;
+    */
+    --font-size: 14px;
+    --font-weight: 400; /* 200 : 900 */
+    --line-height: 1.2;
+
+    --font-size-lyrics: 14px; /* 1.5em (default) */
+
+    --font-family-header: "asciid";
+    --font-size-multiplier-header: 4;
+
+    --display-card-image: block; /* none | block */
+    --display-coverart-image: none; /* none | block */
+    --display-header-image: none; /* none | block */
+    --display-sidebar-image: block; /* none | block */
+    --display-tracklist-image: none; /* none | block */
+    --display-spicetify-banner-ascii: block; /* none | block */
+    --display-music-banner-ascii: none; /* none | block */
+
+    --border-radius: 0px;
+    --border-width: 1px;
+    --border-style: solid; /* dotted | dashed | solid | double | groove | ridge | inset | outset */
+    --border-transition: 0.2s ease; /* 'none' to disable  */
+
+    --global-nav-margin-top: 40px /* set to '0px' if you disabled window controls */
+}
+```
+
+-   **SUGGESTION:** For Windows users, here's how to make the window controls' background match with the topbar background
+
+    -   Enable [CEF/Spotify Tweaks](https://windhawk.net/mods/cef-titlebar-enabler-universal) in Windhawk (recommended)
+
+    -   Alternatively, Put this snippet into your `user.css` (or through the Marketplace's `+ Add CSS` feature)
+
+```css
+/* transparent window controls background */
+.spotify__container--is-desktop:not(.fullscreen) body::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    
+    backdrop-filter: brightness(2.12);
+    /* page zoom [ctrl][+] or [ctrl][-]
+       edit width and height accordingly */
+    width: 135px;
+    /* depending on what global status bar
+       style is enabled height need to be
+       changed accordingly. */
+    height: 32px;
+    margin-top: 16px;
+}
+```
+
+![winctrl](screenshots/winctrl.png)
